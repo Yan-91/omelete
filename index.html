@@ -10,6 +10,7 @@
 <body>
 
     <header class="container">
+        
         <a href="#" class="btn circle shadow" onclick="btnMenu()"><i class="fas fa-bars"></i></a>
         <a href="index.html" title="acessar a home">
             <img src="img/omelete_logo.svg" alt="Logo do Omelete">
@@ -27,8 +28,15 @@
     </header>
 
     <main>
+
         <div class="banner">
-            <img src="img/news/1.jpg" alt="Banner demonstrativo">
+            <picture>
+                <source media="(min-width:1201px )" srcset="img/news/4.png">
+                <source media="(min-width:801px)" srcset="img/news/3.png">
+                <source media="(min-width:426px )" srcset="img/news/2.png">
+                <img src="img/news/1.jpg" alt="Banner demonstrativo">
+            </picture>
+            
         </div>
 
         <h1>principais destaques</h1>
@@ -57,8 +65,10 @@
             <h2 class="btn shadow rounded">séries</h2>
             <div class="card btn rounded shadow">
                 <img src="img/news/2.png" alt="Imagem sobre a notícia X" class="rounded">
-                <h3>Logan está de volta à Marvel!</h3>
+                <div>
+                    <h3>Logan está de volta à Marvel!</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, officia assumenda repellat possimus sequi aspernatur quam, reiciendis expedita saepe suscipit iusto rem. Expedita fuga ut harum excepturi dolore reprehenderit cumque.</p>
+                </div>
             </div>
             <div class="card btn rounded shadow">
                 <img src="img/news/2.png" alt="Imagem sobre a notícia X" class="rounded">
